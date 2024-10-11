@@ -14,6 +14,7 @@ public class CorsConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.addAllowedOrigin("http://localhost:5173"); // Permitir origen de React
         configuration.addAllowedOrigin("https://lucky-baklava-607e71.netlify.app"); // Permitir origen de React
+        configuration.addAllowedOrigin("https://web-clinica.onrender.com"); // Permitir origen de React
         configuration.addAllowedHeader("*"); // Permitir todos los encabezados
         configuration.addAllowedMethod("*"); // Permitir todos los métodos HTTP
         configuration.setAllowCredentials(true); // Permitir credenciales
