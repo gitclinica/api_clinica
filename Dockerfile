@@ -1,5 +1,5 @@
 # Usar una imagen base de Java
-FROM openjdk:21-jdk
+FROM openjdk:22-jdk
 
 # Copiar el archivo .jar al contenedor
 COPY deploy/clinica.jar /app/mi-app.jar
