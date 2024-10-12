@@ -55,7 +55,7 @@ public class AuthController {
       Usuario usuario = usuarioRepository.findByCorreo(correo)
       .orElseThrow(() -> new NotFoundException("El correo: " + correo + " no se encuentra registrado"));
 
-      String urlRecover = "http://localhost:5173/cambiar-password?token=" + this.tokenService.generateToken(usuario);
+      String urlRecover = "https://web-clinica.onrender.com/cambiar-password?token=" + this.tokenService.generateToken(usuario);
       emailService.sendEmail(correo, "Restablecer contraseña", "<html>\n" +
       "  <body>\n" +
       "    <h1>Restablecer tu contraseña</h1>\n" +
